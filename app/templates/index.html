@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Hello, world!</h1>
+    <h2>POKEMON</h2>
+
+    <div><button onclick="location.href='register'">Register</button></div>
+    <div><button onclick="location.href='login'">Login</button></div>
+    <div class="container">
+
+        <div class="row-justify-content-center">
+
+            <div><img src="{{ gyarados.sprites }}" alt=""></img></div>
+            <div><img src="{{ zapdos.sprites }}" alt=""></img></div>
+            <div><img src="{{ mewtwo.sprites }}" alt=""></img></div>
+            <div><img src="{{ ditto.sprites }}" alt=""></img></div>
+            <div><img src="{{ mew.sprites }}" alt=""></img></div>
+
+        </div>
+
+    </div>
+{% endblock %}
