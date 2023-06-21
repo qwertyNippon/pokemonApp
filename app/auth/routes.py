@@ -38,6 +38,8 @@ def login():
                 print(user.password)
                 if user.password == password:
                     print('you logged in!')
+                    user = user[0].upper()
+                    login_user(user)
                     return redirect(url_for('land'))
                 else:
                     print('wrong!')
@@ -50,3 +52,8 @@ def login():
             # different version of the same use case.
 
     return render_template('login.html', form=form)
+
+@auth.route('/logout')
+def logout():
+    login_user()
+    return redirect(url_for('land'))
