@@ -36,6 +36,7 @@ def login():
                 print(user.password)
                 if user.password == password:
                     print('you logged in!')
+                    return redirect(url_for('land'))
                 else:
                     print('wrong!')
             else:

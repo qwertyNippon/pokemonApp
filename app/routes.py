@@ -94,3 +94,7 @@ def home():
 def test():
     return 
 
+@app.route('/login')
+def test1():
+    return 
+
