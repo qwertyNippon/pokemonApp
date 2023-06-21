@@ -1,6 +1,5 @@
 from flask import Flask
 
-
 from config import Config
 
 from .auth.routes import auth
@@ -20,6 +19,8 @@ def load_user(user_id):
 
 db.init_app(app)
 migrate = Migrate(app, db)
+
+login.init_app(app)
 
 app.register_blueprint(auth)
 

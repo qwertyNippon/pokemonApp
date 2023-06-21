@@ -1,6 +1,8 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from .forms import RegisterForm, LoginForm
 from ..models import User
+from flask_login import current_user, login_user, logout_user
+
 
 auth = Blueprint('auth', __name__, template_folder='auth_templates')
 
