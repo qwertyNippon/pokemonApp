@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    background-color: aqua;
+}
+
+.pokeBackG{
+    background-image: url(../static/pokemon-party.jpg);
+    padding-top: 100px;
+    object-fit: cover; 
+}

@@ -2,26 +2,24 @@
 
 {% block content %}
 
-<h2>This will be our register page!</h2>
-<h3>Welcome to the auth blueprint</h3>
+<link rel="stylesheet" href="../../static/main.css">
+
+<h2>Register page!</h2>
 
 <div class="container">
     <div class="row justify-content-center">
         <form method="POST" class="col-5">
-           {{ form.hidden_tag() }}
+            {{ form.hidden_tag() }}
 
-                {{ form.username(class='form-control', placeholder="Username") }}
-                {{ form.email(class='form-control', placeholder="Email") }}
-                {{ form.password(class='form-control', placeholder="Password") }}
-                {{ form.confirm_password(class='form-control', placeholder="Confirm Password") }}
-                {{ form.submit(class='btn btn-primary', placeholder="Submit") }}
-
-           
+            {{ form.username(class='form-control', placeholder="Username") }}
+            {{ form.email(class='form-control', placeholder="Email") }}
+            {{ form.password(class='form-control', placeholder="Password") }}
+            {{ form.confirm_password(class='form-control', placeholder="Confirm Password") }}
+            {{ form.submit(class='btn btn-primary', placeholder="Submit") }}
 
         </form>
     </div>
 </div>
-
 
 
 {% endblock %}
