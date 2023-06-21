@@ -33,3 +33,9 @@ class Post(db.Model):
         self.body = body
         self.img_url = img_url
         self.user_id = user_id
+
+class Pokemon():
+
+    # data base save info.
+    # limit team
+    # output 

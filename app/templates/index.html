@@ -8,14 +8,28 @@
     <div><button onclick="location.href='login'">Login</button></div>
     <div class="container">
 
+
+
+    </div>
+    <div class="container">
+
         <div class="row-justify-content-center">
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                {{ form.pokemon(class='form-control', placeholder='Enter the name of a Pokemon') }}
+                {{ form.submit(class='btn btn-primary', placeholder="Search Pokemon") }}
 
-            <div><img src="{{ gyarados.sprites }}" alt=""></img></div>
-            <div><img src="{{ zapdos.sprites }}" alt=""></img></div>
-            <div><img src="{{ mewtwo.sprites }}" alt=""></img></div>
-            <div><img src="{{ ditto.sprites }}" alt=""></img></div>
-            <div><img src="{{ mew.sprites }}" alt=""></img></div>
 
+            </form>
+            
+        </div>
+
+    </div>
+    <div class="container">
+
+        <div class="row-justify-content-center">
+            <p>{{ poke_dict.name }}</p>
+            
         </div>
 
     </div>
