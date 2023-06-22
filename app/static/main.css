@@ -1,10 +1,19 @@
 body {
     margin: 0;
-    background-color: aqua;
 }
 
-.pokeBackG{
+/* .pokeBackG{
     background-image: url(../static/pokemon-party.jpg);
     padding-top: 100px;
     object-fit: cover; 
-}
+} */
+
+.home-bg {
+    background: url(../static/pokemon-party.jpg) no-repeat center center fixed;
+    }
+.reg-bg {
+    background: url(../static/register.png) no-repeat center center fixed;
+    }
+.star-bg {
+    background: url(../static/starter.jpg) no-repeat center center fixed;
+    }

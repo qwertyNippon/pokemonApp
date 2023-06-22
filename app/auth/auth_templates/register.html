@@ -1,25 +1,38 @@
-{% extends 'base.html' %}
-
-{% block content %}
-
-<link rel="stylesheet" href="../../static/main.css">
-
-<h2>Register page!</h2>
-
-<div class="container">
-    <div class="row justify-content-center">
-        <form method="POST" class="col-5">
-            {{ form.hidden_tag() }}
-
-            {{ form.username(class='form-control', placeholder="Username") }}
-            {{ form.email(class='form-control', placeholder="Email") }}
-            {{ form.password(class='form-control', placeholder="Password") }}
-            {{ form.confirm_password(class='form-control', placeholder="Confirm Password") }}
-            {{ form.submit(class='btn btn-primary', placeholder="Submit") }}
-
-        </form>
+<!DOCTYPE html>
+<html lang="en" class="reg-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    {% extends 'base.html' %}
+    
+    {% block content %}
+    <!-- <link rel="stylesheet" href="../../static/main.css"> -->
+    
+    
+    <h2>Register page!</h2>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <form method="POST" class="col-5">
+                {{ form.hidden_tag() }}
+                
+                {{ form.username(class='form-control', placeholder="Username") }}
+                {{ form.email(class='form-control', placeholder="Email") }}
+                {{ form.password(class='form-control', placeholder="Password") }}
+                {{ form.confirm_password(class='form-control', placeholder="Confirm Password") }}
+                {{ form.submit(class='btn btn-primary', placeholder="Submit") }}
+                
+            </form>
+        </div>
     </div>
-</div>
-
-
-{% endblock %}
+    
+    
+    {% endblock %}
+</body>
+</html>

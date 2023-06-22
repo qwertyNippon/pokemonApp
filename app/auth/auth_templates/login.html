@@ -1,13 +1,24 @@
-{% extends 'base.html' %}
-
-{% block content %}
-
-<h2>This is login page</h2>
-
-<div class="container">
-    <div class="row justify-content-center">
+<!DOCTYPE html>
+<html lang="en" class="star-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    {% extends 'base.html' %}
+    
+    
+    
+    {% block content %}
+    
+    <h2>This is login page</h2>
+    <div class="container">
+        <div class="row justify-content-center">
         <form method="POST" class="col-5">
-           {{ form.hidden_tag() }}
+            {{ form.hidden_tag() }}
 
                 {{ form.username(class='form-control', placeholder="Username") }}
                 {{ form.password(class='form-control', placeholder="Password") }}
@@ -18,3 +29,5 @@
 </div>
 
 {% endblock %}
+</body>
+</html>

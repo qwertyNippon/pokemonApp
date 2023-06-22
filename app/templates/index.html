@@ -1,5 +1,18 @@
-{% extends 'base.html' %}
-
+<!DOCTYPE html>
+<html lang="en"class="home-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    
+    {% extends 'base.html' %}
+    
+    
 {% block content %}
 <link rel="stylesheet" class="pokeBack" href="../static/pokemon-party.jpg">
     <h2>POKEMON</h2>
@@ -39,14 +52,16 @@
               <li class="list-group-item">Attack: {{ poke_dict.attack['base_stat'] }}</li>
               <li class="list-group-item">Defense: {{ poke_dict.defense['base_stat'] }}</li>
               <img class="list-group-item" src="{{ poke_dict.sprites }}"></img>
-            
-            {% endif %}
-
-
+              
+              {% endif %}
+              
+              
               <!-- <img src="" alt=""> -->
             </ul>
-          </div>
-
-
+        </div>
+        
+        
     </div>
-{% endblock %}
+    {% endblock %}
+</body>
+</html>
