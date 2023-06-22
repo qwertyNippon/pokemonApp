@@ -32,15 +32,15 @@
             </div>
             <ul class="list-group list-group-flush">
 
-            {% for t in teach_list %}
+            {% if poke_dict %}
 
 
-              <li class="list-group-item">{{ poke_dict.name }}</li>
-              <li class="list-group-item">{{ poke_dict.attack }}</li>
-              <li class="list-group-item">{{ poke_dict.defense }}</li>
+              <li class="list-group-item">Pokemon:{{ poke_dict.name }}</li>
+              <li class="list-group-item">Attack: {{ poke_dict.attack['base_stat'] }}</li>
+              <li class="list-group-item">Defense: {{ poke_dict.defense['base_stat'] }}</li>
               <img class="list-group-item">{{ poke_dict.sprites }}</img>
             
-            {% endfor %}
+            {% endif %}
 
               <!-- <img src="" alt=""> -->
             </ul>

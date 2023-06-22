@@ -27,7 +27,7 @@ def land():
 
             poke_dict = func(pokeName)
             return render_template('index.html', form=form, poke_dict=poke_dict)
-
+    # tkinter.messagebox.showerror(title=None, message='Check spelling please', **options)
     return render_template('index.html', form=form)
 
 
