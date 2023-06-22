@@ -11,9 +11,9 @@ def land():
             pokeName = form.pokemon.data
 
 
-            def func(poke):
+            def func(pokeName):
                 data_dict = {}
-                res1 = requests.get(f'https://pokeapi.co/api/v2/pokemon/{poke}')
+                res1 = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokeName}')
                 data = res1.json()
                 data_dict['name'] = data['name']
                 data_dict['abilities'] = data['abilities'][0]['ability']

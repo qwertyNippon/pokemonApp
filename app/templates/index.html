@@ -26,11 +26,26 @@
 
     </div>
     <div class="container">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+              Captured Pokemon
+            </div>
+            <ul class="list-group list-group-flush">
 
-        <div class="row-justify-content-center">
-            <p>{{ poke_dict.name }}</p>
+            {% for t in teach_list %}
+
+
+              <li class="list-group-item">{{ poke_dict.name }}</li>
+              <li class="list-group-item">{{ poke_dict.attack }}</li>
+              <li class="list-group-item">{{ poke_dict.defense }}</li>
+              <img class="list-group-item">{{ poke_dict.sprites }}</img>
             
-        </div>
+            {% endfor %}
+
+              <!-- <img src="" alt=""> -->
+            </ul>
+          </div>
+
 
     </div>
 {% endblock %}
