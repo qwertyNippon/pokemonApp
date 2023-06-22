@@ -10,8 +10,6 @@ def land():
     if request.method == 'POST':
         if form.validate():
             pokeName = form.pokemon.data
-
-
             def func(pokeName):
                 data_dict = {}
                 res1 = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokeName}')
@@ -29,6 +27,26 @@ def land():
             poke_dict = func(pokeName)
             return render_template('index.html', form=form, poke_dict=poke_dict)
     return render_template('index.html', form=form)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     #     if form.validate():
     #         def func(pokeName):
     #             data_dict = {}
@@ -51,6 +69,4 @@ def land():
     #                 flash('Check your spelling')
     #     return render_template('index.html', form=form, poke_dict=poke_dict)
     # return render_template('index.html', form=form)
-
-
 
